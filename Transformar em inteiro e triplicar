@@ -1,0 +1,5 @@
+>>> num = input ("Digite um numero inteiro")
+Digite um numero inteiro 6
+>>> inteiro = int(num)
+>>> print ("o triplo é: ", inteiro * 3)
+o triplo é:  18
