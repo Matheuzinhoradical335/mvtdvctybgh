@@ -1,0 +1,10 @@
+>>> n1 = int(input ("Digite"))
+Digite  49
+>>> n2 = int(input ("Digite"))
+Digite 73
+>>> if n1 > n2:
+...     print ("O numero ", n1, " é maior")
+... else:
+...     print ("O numero ", n2, " é maior")
+...
+O numero  73  é maior
