@@ -1,0 +1,28 @@
+if num > 0:
+...     print("O numero é positivo.")
+... elif num < 0:
+...     print("O numero é negativo.")
+... else:
+...     print("O numero é neutro.")
+...
+O numero é positivo.
+>>> num = int(input("Digite o numero: "))
+Digite o numero: -7
+>>> if num > 0:
+...     print("O numero é positivo.")
+... elif num < 0:
+...     print("O numero é negativo.")
+... else:
+...     print("O numero é neutro.")
+...
+O numero é negativo.
+>>> num = int(input("Digite o numero: "))
+Digite o numero: 0
+>>> if num > 0:
+...     print("O numero é positivo.")
+... elif num < 0:
+...     print("O numero é negativo.")
+... else:
+...     print("O numero é neutro.")
+...
+O numero é neutro.

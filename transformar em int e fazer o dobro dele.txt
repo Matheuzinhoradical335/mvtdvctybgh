@@ -1,0 +1,5 @@
+>>> numero = input ("Digite seu numero. ")
+Digite seu numero. 15
+>>> intr = int(numero)
+>>> print ("O dobro é", intr * 2)
+O dobro é 30
