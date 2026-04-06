@@ -1,0 +1,16 @@
+>>> num = int(input ("digite um numero inteiro: "))
+digite um numero inteiro: 4
+>>> if num % 2 == 0:
+...     print ("numero é PAR")
+... else:
+...     print ("numero é IMPAR")
+...
+numero é PAR
+>>> num = int(input ("digite um numero inteiro: "))
+digite um numero inteiro: 5
+>>> if num % 2 == 0:
+...     print ("numero é PAR")
+... else:
+...     print ("numero é IMPAR")
+...
+numero é IMPAR
