@@ -1,0 +1,8 @@
+>>> num = input ("digite um numero")
+digite um numero 4
+>>> print (type(num))
+<class 'str'>
+>>> num = int(input ("digite um numero"))
+digite um numero 4
+>>> print (type(num))
+<class 'int'>
