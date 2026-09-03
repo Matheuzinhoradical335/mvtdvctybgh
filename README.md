@@ -1,3 +1,17 @@
+/Avaliação//
+
+Data: 02/09/2026
+
+Avaliação realizada por - PAULO DAVI DE MELO;
+
+Avaliando projeto de - MATHEUS ALEXANDRE BENÍCIO DE ARAÚJO;
+
+/Avaliação//
+
+Avaliação - Organização bem estruturada, o aluno respeitou a hierarquia das tags de título e utilizou corretamente os elementos semânticos, como header, main, section e footer, no lugar de divs genéricas. O formulário foi feito de forma coerente com o tema proposto, com os diferentes campos de tipos semanticamente corretos, como tel para telefone e number com min/max para a avaliação da loja; o required foi utilizado respeitando o mínimo necessário e os labels foram corretamente associados aos inputs via for/id. Como sugestão de melhoria, vale a pena unificar os três formulários (materiais básicos, ferramentas e dados de entrega) em um único formulário — assim, ao finalizar o pedido, todos os itens selecionados são enviados junto com os dados de entrega, incluindo também o campo de avaliação da loja no mesmo envio.
+
+
+
 <!DOCTYPE html> 
 <html lang="pt-BR"> 
     <head> 
