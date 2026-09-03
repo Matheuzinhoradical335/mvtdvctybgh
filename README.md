@@ -1,28 +1,95 @@
-#include <stdio.h>
-#include <stdlib.h>
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+    <head> 
+        <!-- Meta charset essencial para acentuação correta[span_1](start_span)[span_1](end_span) -->
+        <meta charset="UTF-8"> 
+        <title>CONSTRUBEM - MATERIAIS DE CONSTRUÇÃO</title>   
+    </head> 
+ 
+    <body> 
+        <header> 
+            <h1>CONSTRUBEM - MATERIAIS DE CONSTRUÇÃO</h1> 
+            <p>Tudo para a sua obra, do alicerce ao telhado!</p> 
+            <h2>Nossa Localização: </h2> 
+            <p>Avenida dos Construtores, 456 - Centro, XXXXX - XXX</p> 
+        </header> 
+ 
+        <main> 
+            <section> 
+                <h2>Catálogo de Produtos:</h2> 
+                <p>Selecione os itens desejados abaixo.</p> 
+                <p><strong>Lembre-se de preencher seus dados de entrega ao fim do pedido!</strong></p> 
+            </section> 
+ 
+            <!-- Seção de Materiais Básicos -->
+            <section> 
+                <h2>Materiais Básicos:</h2> 
+                <form> 
+                    <input type="checkbox" value="Cimento 50kg" id="MBa" name="MaterialBasico"> 
+                    <!-- Associação correta do for com o id do input[span_2](start_span)[span_2](end_span) -->
+                    <label for="MBa">Saco de Cimento 50kg <strong>(R$ 35,00)</strong></label><br> 
+ 
+                    <input type="checkbox" value="Tijolo 8 furos" id="MBb" name="MaterialBasico"> 
+                    <label for="MBb">Milheiro de Tijolo 8 Furos <strong>(R$ 600,00)</strong></label><br> 
 
-int main() {
-    char nome_ferramenta[50];
-    int codigo_qr;
-    float valor_compra;
+                    <input type="checkbox" value="Areia fina" id="MBc" name="MaterialBasico"> 
+                    <label for="MBc">Metro de Areia Fina <strong>(R$ 120,00)</strong></label><br> 
+                </form> 
+             </section> 
 
-    printf("--- SISTEMA FERRALOG ---\n");
+            <!-- Seção de Ferramentas -->
+            <section> 
+                <h2>Ferramentas:</h2> 
+                <form> 
+                    <input type="checkbox" value="Martelo" id="FEa" name="Ferramentas"> 
+                    <label for="FEa">Martelo com cabo de madeira <strong>(R$ 25,00)</strong></label><br> 
+ 
+                    <input type="checkbox" value="Furadeira" id="FEb" name="Ferramentas"> 
+                    <label for="FEb">Furadeira de Impacto 500W <strong>(R$ 150,00)</strong></label><br> 
+                </form> 
+             </section> 
+        </main> 
+ 
+        <footer> 
+            <h2>Formulário para a entrega:</h2> 
+            <!-- Um único formulário agrupando os dados do cliente[span_3](start_span)[span_3](end_span) -->
+            <form> 
+                <fieldset> 
+                    <legend>Preencha todas as informações</legend> 
+                    
+                    <label for="Nm">Nome do Responsável pela Obra:</label> 
+                    <input type="text" id="Nm" name="Nome" placeholder="Digite seu nome aqui..." required> <br><br>
+                    
+                    <label for="tlf">Telefone (WhatsApp):</label> 
+                    <!-- type="tel" aciona o teclado numérico em celulares[span_4](start_span)[span_4](end_span) -->
+                    <input type="tel" id="tlf" name="Telefone" placeholder="(00) 00000-0000" required> <br><br>
+     
+                    <label for="pagamento">Forma de pagamento (no ato da entrega):</label> 
+                    <!-- Tag select para lista suspensa[span_5](start_span)[span_5](end_span) -->
+                    <select name="pagamento" id="pagamento" required> 
+                        <option value="">Selecione...</option> 
+                        <option value="Dinheiro">Dinheiro</option> 
+                        <option value="PIX">PIX</option> 
+                        <option value="Cartão de crédito">Cartão de crédito</option> 
+                        <option value="Cartão de débito">Cartão de débito</option> 
+                    </select> <br><br>
+     
+                    <label for="End">Endereço da Obra:</label> 
+                    <input type="text" id="End" name="Endereço" placeholder="Rua, número, bairro..." required> <br><br>
+     
+                    <label for="PTR">Ponto de referência:</label> 
+                    <input type="text" id="PTR" name="Ponto de referência" placeholder="Ex: Próximo ao mercado..."> 
+                </fieldset> 
+                
+                <br><button type="submit">Finalizar Pedido de Materiais</button><br> 
+            </form>
 
-    printf("Nome da ferramenta: ");
-    scanf("%s", nome_ferramenta);
-
-    printf("Codigo QR: ");
-    scanf("%d", &codigo_qr);
-
-    printf("Valor da compra: R$ ");
-    scanf("%f", &valor_compra);
-
-    system("cls"); // Limpa a tela no Windows
-
-    printf("--- RECIBO FERRALOG ---\n");
-    printf("Ferramenta: %s\n", nome_ferramenta);
-    printf("QR Code: %d\n", codigo_qr);
-    printf("Valor: R$ %.2f\n", valor_compra); // %.2f para duas casas decimais
-
-    return 0;
-}
+            <section>
+                <h2>Avalie nosso atendimento!</h2> 
+                <label for="ava">Nota para a loja (de 1 a 5 estrelas):</label> <br>
+                <!-- Uso de validação nativa min e max no input numérico[span_6](start_span)[span_6](end_span) -->
+                <input type="number" id="ava" name="avaliação" min="1" max="5" placeholder="Sua nota..."> 
+            </section>
+        </footer> 
+    </body> 
+</html>
